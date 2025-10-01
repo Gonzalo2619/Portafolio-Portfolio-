@@ -6,6 +6,7 @@ import About from "./components/About/About.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Footer from "./components/Footer.jsx";
 import Resume from "./components/Resume/ResumeNew.jsx";
+import Translate from "./components/Traductor.jsx";
 import {
   BrowserRouter as Router,
   Route,
@@ -41,6 +42,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
+        <Translate />
         <Footer />
       </div>
     </Router>
